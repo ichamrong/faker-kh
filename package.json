@@ -1,0 +1,50 @@
+{
+  "name": "@faker-kh/core",
+  "version": "1.0.0",
+  "description": "A Khmer localization extension for Faker – generate fake names, addresses, and other data in Khmer.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest",
+    "preview": "ts-node scripts/generate.ts"
+  },
+  "keywords": [
+    "faker",
+    "khmer",
+    "faker-kh",
+    "fakerjs",
+    "cambodia",
+    "typescript",
+    "localization",
+    "faker-locales",
+    "test-data"
+  ],
+  "author": "Chamrong <contact@ichamrong.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ichamrong/faker-kh"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.4.5",
+    "vitest": "^1.5.2",
+    "ts-node": "^10.9.2"
+  },
+  "packageManager": "pnpm@10.12.1",
+  "dependencies": {
+    "date-fns": "^3.3.1"
+  }
+}
